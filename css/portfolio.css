@@ -1,0 +1,126 @@
+:root {
+    --main-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --background-buttons: #F5F4FA;
+    --main-back:#E5E5E5;
+    --just-white: #FFF;
+    --just-black: #000000;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--just-white);
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
+    font-size: 26px;
+    line-height: 0.83;
+}
+.top {
+    color: var(--just-black);
+}
+.bot {
+    color: var(--just-white);
+}
+
+.web {
+    color: var(--accent-color);
+}
+
+.contacts {
+    list-style-type: none;
+}
+.contacts a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color)
+}
+
+.site-nav {list-style-type: none;}
+.site-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.footer {
+    background: #2F303A;
+}
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 0.58 ;
+    color: var(--just-white);
+}
+
+.additional {list-style-type: none;}
+.additional a {
+    font-size: 14px;
+    line-height: 0.58;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.additional a:hover,
+.additional a:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* То что только у портфолио */
+.site-nav.current {
+    color: var(--accent-color);
+}
+.main {
+    background: var(--main-back);
+}
+
+.buttons {list-style-type: none;}
+.buttons button{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.6;
+    color: var(--main-color);
+    background-color: var(--background-buttons);
+}
+.buttons button:hover,
+.buttons button:focus {
+    color: var(--just-white);
+    background-color: var(--accent-color);
+}
+
+.projects a {
+    text-decoration: none;
+}
+.projects li {
+    list-style-type: none;
+}
+.projects h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 0.5;
+}
+.projects p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.53;
+    color: var(--text-color);
+}

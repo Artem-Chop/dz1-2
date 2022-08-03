@@ -1,0 +1,149 @@
+:root {
+    --main-color: #212121;
+    --text-color: #757575;
+    --accent-color: #2196F3;
+    --just-white: #FFF;
+    --just-black: #000000;
+    --hero-back: #2F303A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--just-white);
+    color: var(--main-color);
+    font-weight: 400;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 0.83;
+}
+
+.top {
+    color: var(--just-black);
+}
+
+.bot {
+    color: var(--just-white);
+}
+
+.web {
+    color: var(--accent-color);
+}
+
+.contacts {
+    list-style-type: none;
+}
+
+.contacts a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color)
+}
+
+.site-nav {
+    list-style-type: none;
+}
+
+.site-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.87;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.footer {
+    background: #2F303A;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 0.58;
+    color: var(--just-white);
+}
+
+.additional {
+    list-style-type: none;
+}
+
+.additional a {
+    font-size: 14px;
+    line-height: 0.58;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.additional a:hover,
+.additional a:focus {
+    color: var(--accent-color);
+}
+
+
+/* То что Студия отдельно */
+
+.site-nav .current {
+    color: var(--accent-color);
+}
+.hero {
+    background-color: var(--hero-back);
+}
+.hero h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 0.73;
+    text-align: center;
+    color: var(--just-white);
+}
+.hero button {
+    cursor: pointer;
+    color: var(--just-white);
+    background-color: var(--accent-color);
+}
+.features >li {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.85;
+    list-style-type: none;
+}
+.features p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 0.58;
+    color: var(--text-color);
+}
+.job ul{list-style-type: none;}
+.subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 0.85;
+}
+.team {
+    background-color: #F5F4FA;
+}
+.team ul{list-style-type: none;}
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.85;
+}
+.team p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 0.85;
+    color: var(--text-color);
+}
