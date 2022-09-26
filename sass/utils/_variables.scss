@@ -1,0 +1,21 @@
+$mainColor: #212121;
+$textColor: #757575;
+$accentColor: #2196F3;
+$backgroundButtons: #F5F4FA;
+$justWhite: #FFF;
+$justBlack: #000000;
+$heroBack: #2F303A;
+$mainBack: #E5E5E5;
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $justWhite;
+    color: $textColor;
+    font-weight: 400;
+}

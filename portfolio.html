@@ -4,100 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=he, initial-scale=1.0">
-    <title>Rortfolio</title>
+    <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
 </head>
 <body>
-    <header class="page-header">
+    <header class="header">
+        <a href="" class="logo top"> <span class="accent">Web</span>Studio</a>
         <nav>
-            <a href="" class="logo top"> <span class="web">Web</span>Studio</a>
             <ul class="site-nav">
-                <li><a href="./studio.html">Студия</a></li>
-                <li><a href="" class="site-nav current">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+                <li class="site-nav-item"><a href="./studio.html" >Студия</a></li>
+                <li class="site-nav-item"><a href="" class="current">Портфолио</a></li>
+                <li class="site-nav-item"><a href="">Контакты</a></li>
             </ul>
         </nav>
         <ul class="contacts">
-            <li><a href="mailto:info@devstudio.com" target="_blank">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" target="_blank">+38 096 111 11 11</a></li>
+            <li class="contacts-item"><a href="mailto:info@devstudio.com" target="_blank"><svg class="icon nav-icon" width="16px" height="12"><use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+            <li class="contacts-item"><a href="tel:+380961111111" target="_blank"><svg class="icon nav-icon" width="10px" height="16px"><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
     </header>
     <main class="main">
-        <h1>Наши проекты</h1>
-        <ul class="buttons">
-            <li><button type="button">Все</button></li>
-            <li><button type="button">Веб-сайты</button></li>
-            <li><button type="button">Приложения</button></li>
-            <li><button type="button">Дизайн</button></li>
-            <li><button type="button">Маркетинг</button></li>
-        </ul>
-        <ul class="projects">
-            <li>
-                <a href=""><img src="./images/Технокряк.jpg" width="370" alt="CV работников">
-                  <h2>Технокряк</h2>
-                   <p>Веб-сайт</p>
-                 </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/NewOrleanvsGoldenStar.jpg" width="370" alt="два игрока в баскетбол">
-                    <h2>Постер New Orlean vs Golden Star</h2>
-                    <p>Дизайн</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/РесторанSeafood.jpg" width="370" alt="рыба">
-                    <h2>Ресторан Seafood</h2>
-                    <p>Приложение</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/ПроектPrime.jpg" width="370" alt="наушники">
-                    <h2>Проект Prime</h2>
-                    <p>Маркетинг</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/ПроектBoxes.jpg" width="370" alt="две коробки">
-                    <h2>Проект Boxes</h2>
-                    <p>Приложение</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/noBorders.jpg" width="370" alt="стриница сайта на мониторе">
-                    <h2>Inspiration has no Borders</h2>
-                    <p>Веб-сайт</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/LimitedEdition.jpg" width="370" alt="открытый журнал">
-                    <h2>Издание Limited Edition</h2>
-                    <p>Дизайн</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/ПроектLAB.jpg" width="370" alt="бирка">
-                    <h2>Проект LAB</h2>
-                    <p>Маркетинг</p>
-                </a>
-            </li>
-            <li>
-                <a href=""><img src="./images/GrowingBusiness.jpg" width="370" alt="человек использующий приложение">
-                    <h2>Growing Business</h2>
-                    <p>Приложение</p>
-                </a>
-            </li>
-        </ul>
+        <!-- <h1 class="invisible">Наши проекты</h1>2 -->
+        <div class="conteiner">
+            <ul class="buttons">
+                <li class="button-item"><button type="button" class="button-item-button">Все</button></li>
+                <li class="button-item"><button type="button" class="button-item-button">Веб-сайты</button></li>
+                <li class="button-item"><button type="button" class="button-item-button">Приложения</button></li>
+                <li class="button-item"><button type="button" class="button-item-button">Дизайн</button></li>
+                <li class="button-item"><button type="button" class="button-item-button">Маркетинг</button></li>
+            </ul>
+            <ul class="projects">
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/Технокряк.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Технокряк</h2>
+                        <p class="description">Веб-сайт</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/NewOrleanvsGoldenStar.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Постер New Orlean vs Golden Star</h2>
+                        <p class="description">Дизайн</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/РесторанSeafood.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Ресторан Seafood</h2>
+                        <p class="description">Приложение</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/ПроектPrime.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Проект Prime</h2>
+                        <p class="description">Маркетинг</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/ПроектBoxes.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Проект Boxes</h2>
+                        <p class="description">Приложение</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/noBorders.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Inspiration has no Borders</h2>
+                        <p class="description">Веб-сайт</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/LimitedEdition.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Издание Limited Edition</h2>
+                        <p class="description">Дизайн</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/ПроектLAB.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Проект LAB</h2>
+                        <p class="description">Маркетинг</p>
+                    </a>
+                </li>
+                <li class="project-item">
+                    <a href=""><div class="projects-hovers"><img src="./images/GrowingBusiness.jpg" width="370" alt="CV работников">
+                        <div class="hover-bg-conteiner"><p class="projects-hovers-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения<br> о компании или частном лице.</p></div></div>
+                        <h2 class="project-item-title">Growing Business</h2>
+                        <p class="description">Приложение</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
     <footer class="footer">
-        <a href="./studio.html" class="logo bot"> <span class="web">Web</span>Studio</a>
-        <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"><address class="address">г. Киев, пр-т Леси Украинки, 26</address></a>
-        <ul class="additional">
-            <li><a href="mailto:info@example.com"> info@example.com</a></li>
-            <li><a href="tel:+380961111111"> +38 099 111 11 11</a></li>
-        </ul>
-    </footer>
+        <div class="footer-container">
+            <div>
+                <a href="" class="logo bot"> <span class="accent">Web</span>Studio</a>
+                <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                <ul class="additional">
+                    <li class="footer-item"><a href="mailto:info@example.com"> info@example.com</a></li>
+                    <li class="footer-item"><a href="tel:+380961111111"> +38 099 111 11 11</a></li>
+                </ul>   
+            </div>
+            <div class="jebu">
+                <p class="join">присоединяйтесь</p>
+                <ul class="jebu-list">
+                    <li><a href=""><svg class="icon-footer"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                    <li><a href=""><svg class="icon-footer"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                    <li><a href=""><svg class="icon-footer"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                    <li><a href=""><svg class="icon-footer"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <p class="join">Подпишитесь на рассылку</p>
+                <form class="footer-form">
+                <input class="footer-form-input" type="email" name="email" id="email" placeholder="E-mail" required>
+                <!-- <label class="footer-label" for="email" ></label> -->
+                <div >
+                    <button class="footer-form-button" type="submit">Подписаться <svg width="24" height="24"><use href="./images/symbol-defs.svg#icon-send"></use></svg></button>
+                    
+                </div>
+                </form>
+            </div>
+        </div>
+        </footer>
 </body>
 
 </html>

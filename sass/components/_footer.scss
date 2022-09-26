@@ -1,0 +1,127 @@
+.footer {
+    padding: 60px 215px;
+    background: #2F303A;
+}
+.footer-container {
+    display: flex;
+}
+.bot {
+    color: $justWhite;
+}
+
+.address {
+    margin-top: 20px;
+    margin-bottom: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $justWhite;
+    letter-spacing: 0.03em;
+}
+
+.additional {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 0 0 0;
+    list-style-type: none;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.additional a {
+    font-size: 14px;
+    line-height: 0.58;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.additional a:hover,
+.additional a:focus {
+    color: $accentColor;
+}
+
+/* join  */
+.jebu {
+    margin-left: 70px;
+}
+.join {
+    color: $justWhite;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+.jebu-list{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jebu-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.jebu-list a:hover {
+    background-color: $accentColor;
+}
+.jebu-list a:focus {
+    background-color: $accentColor;
+}
+
+.jebu-list li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icon-footer {
+    width: 20px;
+    height: 20px;
+    fill: $justWhite;
+}
+.form-container{
+    margin-left: 93px;
+}
+.footer-form {
+    display: flex;
+}
+.footer-form-input{
+    padding: 15px 16px;
+    outline: 0;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: inherit;
+    color: $justWhite;
+}
+.footer-form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: transparent solid 1px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+background-color: $accentColor;
+color: $justWhite;
+fill: $justWhite;
+cursor: pointer;
+}
+.footer-form-button svg{
+    margin-left: 10px;
+}
